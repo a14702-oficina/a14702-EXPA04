@@ -37,6 +37,12 @@ def atualizar_estado(pedidos):
           print("Estado inválido.")
   else:
       print("Pedido não encontrado.")
+      
+def eliminar_pedido(pedidos):
+  id_pedido = int(input("ID do pedido para eliminar: "))
+  if id_pedido in pedidos:
+      eliminar_pedido = input("O pedido foi eliminado")
+
 def exibir_pedidos(pedidos):
   print("\nLista de Pedidos:")
   print("ID\tDescrição\t\tEstado")
@@ -51,7 +57,8 @@ def main():
       print("2. Consultar Pedido")
       print("3. Atualizar Estado")
       print("4. Exibir Todos os Pedidos")
-      print("5. Sair")
+      print("5. Eliminar Pedido")
+      print("6. Sair")
       opcao = input("Escolha uma opção: ")
 
       if opcao == "1":
@@ -63,6 +70,8 @@ def main():
       elif opcao == "4":
           exibir_pedidos(pedidos)
       elif opcao == "5":
+          eliminar_pedido(pedidos)
+      elif opcao == "6":
           print("Encerrando o sistema...")
           break
       else:
