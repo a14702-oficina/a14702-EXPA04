@@ -10,7 +10,7 @@ O departamento de manutenção de equipamentos informáticos recebe frequentemen
 
 # **REQUISITOS**
 
-**O programa deve:^**
+**O programa deve:**
 
 --Registar novos pedidos de manutenção.
 
